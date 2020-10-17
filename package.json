@@ -2,7 +2,6 @@
   "name": "react-workshop-spotify-client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5678",
   "scripts": {
     "start": "concurrently -p \"[{name}]\" -n \"CLIENT,SERVER\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"yarn run start:client\" \"yarn run start:server\"",
     "start:client": "react-scripts start",
@@ -21,11 +20,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "proxy": "http://localhost:5678",
   "dependencies": {
     "date-fns": "^1.30.1",
     "focus-visible": "^4.1.5",
     "immer": "^6.0.2",
-    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-fetch": "^3.0.0",
     "new-component": "^1.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
