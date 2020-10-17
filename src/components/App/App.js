@@ -1,8 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import GlobalStyles from "./GlobalStyles";
+
 const App = () => {
-  return <Router>TODO</Router>;
+  return (
+    <>
+      <GlobalStyles />
+      <Router>TODO</Router>
+    </>
+  );
 };
 
 export default App;
