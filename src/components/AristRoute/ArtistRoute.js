@@ -5,7 +5,6 @@ const ArtistRoute = () => {
   const accessToken = useSelector((state) => state.auth.token);
 
   return accessToken;
-  
 }
 
 export default ArtistRoute;
